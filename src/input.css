@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+  
+  /* Ensure relative positioning for the container */
+  .relative {
+    position: relative;
+  }
+  
+  /* Absolute positioning for the text container */
+  .absolute {
+    position: absolute;
+  }
