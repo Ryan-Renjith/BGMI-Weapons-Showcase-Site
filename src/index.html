@@ -13,6 +13,10 @@
         <video class="w-screen h-screen object-cover absolute" src="PUBG-MOBILE-Global-Launch-Trailer.mp4" muted autoplay loop>
         </video>
 
+        <ion-icon name="menu" 
+        class="text-white fixed mt-5 right-[10%] text-2xl hover:text-green-700
+                transition ease-out z-30 lg:hidden" id="menu"></ion-icon>
+
         <nav class="w-screen h-16 z-20 fixed flex justify-between items-center text-white" id="navbar">
             
                 <div class="ml-5 hidden lg:block">
@@ -71,7 +75,12 @@
     </div>
 
     <section class="flex flex-col bg-black" id="AR">
-        <h1 class="text-4xl font-bold text-center text-white my-10">ASSAULT RIFFLE</h1>
+        <div class="relative">
+            <h1 class="text-4xl font-bold text-center text-white my-10">ASSAULT RIFFLE</h1>
+            <ion-icon name="information-circle-outline" 
+                class="text-white absolute my-10 top-[11px] right-[10%] text-2xl hover:text-green-700
+                        transition ease-out" id="info"></ion-icon>
+        </div>
         <div class="flex flex-wrap justify-center">
             
             <div class="flex flex-col items-center m-10 border-2 border-black w-cardW rounded-[25px] bg-gray-300"> 
@@ -441,5 +450,6 @@
     
 
     <script src="app.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 </html>
