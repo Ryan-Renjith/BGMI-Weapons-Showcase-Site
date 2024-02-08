@@ -46,7 +46,8 @@
             
         </nav>
 
-        <div class="dropdown hidden  mt-16 right-[10%] bg-white border rounded shadow-lg z-40 fixed" id="myDropdown">
+        <div class="dropdown hidden  mt-16 right-[10%] bg-white border rounded shadow-lg z-40 fixed
+                    hover:cursor-pointer" id="myDropdown">
             <ul>
                 <li class="block px-4 py-2 text-gray-800 hover:bg-gray-200" onclick="toggleDropdown(); scrollToSection('ar')">AR</a>
                 <li class="block px-4 py-2 text-gray-800 hover:bg-gray-200" onclick="toggleDropdown(); scrollToSection('crossbows')">Crossbows</a>
@@ -487,15 +488,15 @@
         </div>
     </section>
 
-    <section class="flex flex-col bg-white" id="crossbows">
+    <section class="flex flex-col bg-green-800" id="crossbows">
         <div class="relative">
-            <h1 class="text-4xl font-bold text-center text-black my-10">CROSSBOWS</h1>
+            <h1 class="text-4xl font-bold text-center text-white my-10">CROSSBOWS</h1>
             <ion-icon name="information-circle-outline" 
-                class="text-black absolute my-10 top-[11px] right-[10%] text-2xl hover:text-green-700
+                class="text-white absolute my-10 top-[11px] right-[10%] text-2xl hover:text-black
                         transition ease-out hover:cursor-pointer" id="info" onclick="showInfo('crsBowInfo')"></ion-icon>
         </div>
 
-        <div class="bg-white relative z-40 text-sm text-black p-5 hidden text-center" id="crsBowInfo">
+        <div class="bg-green-800 relative z-40 text-sm text-white p-5 hidden text-center" id="crsBowInfo">
             <p>
                 Crossbows are ancient ranged weapons featuring a horizontal bow mounted on a stock. Known for 
                 their accuracy and power, they've evolved from medieval weaponry to modern sports and hunting 
@@ -506,7 +507,7 @@
 
         <div class="flex flex-wrap justify-center">
             
-            <div class="flex flex-col items-center m-10 border-2 border-white w-cardW rounded-[25px] bg-gray-300"> 
+            <div class="flex flex-col items-center m-10 border-2 border-green-800 w-cardW rounded-[25px] bg-gray-300"> 
                 <img class="p-10" src="images/crossbows/crossbow.png" alt="akm-image">
                 <h1 class="text-4xl bg-yellow-600 font-bold text-white w-full text-center">Crossbow</h1>
                 <div class="bg-gray-400 w-full flex items-center">
@@ -538,7 +539,7 @@
 
             </div>
             
-            <div class="flex flex-col items-center m-10 border-2 border-white w-cardW rounded-[25px] bg-gray-300"> 
+            <div class="flex flex-col items-center m-10 border-2 border-green-800 w-cardW rounded-[25px] bg-gray-300"> 
                 <img class="p-10" src="images/crossbows/tactical-crossbow.png" alt="akm-image">
                 <h1 class="text-4xl bg-yellow-600 font-bold text-white w-full text-center">M416</h1>
                 <div class="bg-gray-400 w-full flex items-center">
@@ -574,26 +575,26 @@
 
     <section class="flex flex-col bg-black" id="dmr">
         <div class="relative">
-            <h1 class="text-4xl font-bold text-center text-white my-10">ASSAULT RIFFLE</h1>
+            <h1 class="text-4xl font-bold text-center text-white my-10">DMR</h1>
             <ion-icon name="information-circle-outline" 
                 class="text-white absolute my-10 top-[11px] right-[10%] text-2xl hover:text-green-700
-                        transition ease-out hover:cursor-pointer" id="info" onclick="showInfo('arInfo')"></ion-icon>
+                        transition ease-out hover:cursor-pointer" id="info" onclick="showInfo('dmrInfo')"></ion-icon>
         </div>
 
-        <div class="bg-black relative z-40 text-sm text-white p-5 hidden text-center" id="arInfo">
+        <div class="bg-black relative z-40 text-sm text-white p-5 hidden text-center" id="dmrInfo">
             <p>
-                Assault rifles are versatile, lightweight firearms capable of firing intermediate cartridges in 
-                both semi-automatic and automatic modes. Known for their military application, they offer a 
-                balanced combination of accuracy and firepower. Their design often includes features such as 
-                detachable magazines and selective fire, making them effective for various combat scenarios.
+                A designated marksman rifle (DMR) is a specialized firearm, bridging the gap between standard 
+                rifles and sniper rifles. Optimized for accuracy at longer ranges, DMRs often feature a magnified 
+                scope, adjustable stocks, and semi-automatic firing. They enhance precision in military and law 
+                enforcement scenarios, providing versatile and targeted long-range capabilities.
             </p>
         </div>
 
         <div class="flex flex-wrap justify-center">
             
             <div class="flex flex-col items-center m-10 border-2 border-black w-cardW rounded-[25px] bg-gray-300"> 
-                <img class="p-10" src="images/ar/akm.png" alt="akm-image">
-                <h1 class="text-4xl bg-yellow-600 font-bold text-white w-full text-center">AKM</h1>
+                <img class="p-10" src="images/dmr/win94.png" alt="akm-image">
+                <h1 class="text-4xl bg-yellow-600 font-bold text-white w-full text-center">Win94</h1>
                 <div class="bg-gray-400 w-full flex items-center">
                     <div class="w-1/2 text-right pr-2">
                         <ul class="font-bold">
@@ -607,25 +608,149 @@
                     </div>
                     <div class="w-1/2 text-left pl-2">
                         <ul>
-                            <li class="my-1">Assault Rifles</li>
-                            <li class="my-1">7.62mm</li>
+                            <li class="my-1">Designated Marksman Riffle</li>
+                            <li class="my-1">.45ACP</li>
+                            <li class="my-1">66</li>
+                            <li class="my-1">8</li>
+                            <li class="my-1">4.0s</li>
+                            <li class="my-1">0.06/s</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-full rounded-b-[25px] flex justify-center">
+                    <a class="my-1 text-lg font-semibold text-green-800 hover:text-yellow-600" 
+                     href="https://en.wikipedia.org/wiki/Winchester_Model_1894">Know More</a>
+                </div>
+
+            </div>
+            
+            <div class="flex flex-col items-center m-10 border-2 border-black w-cardW rounded-[25px] bg-gray-300"> 
+                <img class="p-10" src="images/dmr/mk12.png" alt="akm-image">
+                <h1 class="text-4xl bg-yellow-600 font-bold text-white w-full text-center">Mk12</h1>
+                <div class="bg-gray-400 w-full flex items-center">
+                    <div class="w-1/2 text-right pr-2">
+                        <ul class="font-bold">
+                            <li class="my-1">Type:</li>
+                            <li class="my-1">Ammo Type:</li>
+                            <li class="my-1">Base Damage:</li>
+                            <li class="my-1">Magazine Size:</li>
+                            <li class="my-1">Reload Time:</li>
+                            <li class="my-1">Fire Rate:</li>
+                        </ul>
+                    </div>
+                    <div class="w-1/2 text-left pl-2">
+                        <ul>
+                            <li class="my-1">Designated Marksman Riffle</li>
+                            <li class="my-1">5.56mm</li>
                             <li class="my-1">48</li>
-                            <li class="my-1">30 (Extended: 40) </li>
+                            <li class="my-1">20 (Extended: 30) </li>
+                            <li class="my-1">3.5s</li>
+                            <li class="my-1">0.13/s</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-full rounded-b-[25px] flex justify-center">
+                    <a class="my-1 text-lg font-semibold text-green-800 hover:text-yellow-600" 
+                     href="https://en.wikipedia.org/wiki/Mk_12_Special_Purpose_Rifle">Know More</a>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center m-10 border-2 border-black w-cardW rounded-[25px] bg-gray-300"> 
+                <img class="p-10" src="images/dmr/mini14.png" alt="akm-image">
+                <h1 class="text-4xl bg-yellow-600 font-bold text-white w-full text-center">Mini14</h1>
+                <div class="bg-gray-400 w-full flex items-center">
+                    <div class="w-1/2 text-right pr-2">
+                        <ul class="font-bold">
+                            <li class="my-1">Type:</li>
+                            <li class="my-1">Ammo Type:</li>
+                            <li class="my-1">Base Damage:</li>
+                            <li class="my-1">Magazine Size:</li>
+                            <li class="my-1">Reload Time:</li>
+                            <li class="my-1">Fire Rate:</li>
+                        </ul>
+                    </div>
+                    <div class="w-1/2 text-left pl-2">
+                        <ul>
+                            <li class="my-1">Designated Marksman Riffle</li>
+                            <li class="my-1">5.56mm</li>
+                            <li class="my-1">46</li>
+                            <li class="my-1">20 (Extended: 30) </li>
+                            <li class="my-1">3.6s</li>
+                            <li class="my-1">0.13/s</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-full rounded-b-[25px] flex justify-center">
+                    <a class="my-1 text-lg font-semibold text-green-800 hover:text-yellow-600" 
+                     href="https://en.wikipedia.org/wiki/Ruger_Mini-14">Know More</a>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center m-10 border-2 border-black w-cardW rounded-[25px] bg-gray-300"> 
+                <img class="p-10" src="images/dmr/vss.png" alt="akm-image">
+                <h1 class="text-4xl bg-yellow-600 font-bold text-white w-full text-center">VSS</h1>
+                <div class="bg-gray-400 w-full flex items-center">
+                    <div class="w-1/2 text-right pr-2">
+                        <ul class="font-bold">
+                            <li class="my-1">Type:</li>
+                            <li class="my-1">Ammo Type:</li>
+                            <li class="my-1">Base Damage:</li>
+                            <li class="my-1">Magazine Size:</li>
+                            <li class="my-1">Reload Time:</li>
+                            <li class="my-1">Fire Rate:</li>
+                        </ul>
+                    </div>
+                    <div class="w-1/2 text-left pl-2">
+                        <ul>
+                            <li class="my-1">Designated Marksman Riffle</li>
+                            <li class="my-1">9mm</li>
+                            <li class="my-1">41</li>
+                            <li class="my-1">10 (Extended: 20) </li>
                             <li class="my-1">2.9s</li>
+                            <li class="my-1">0.086/s</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-full rounded-b-[25px] flex justify-center">
+                    <a class="my-1 text-lg font-semibold text-green-800 hover:text-yellow-600" 
+                     href="https://en.wikipedia.org/wiki/AS_Val_and_VSS_Vintorez">Know More</a>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center m-10 border-2 border-black w-cardW rounded-[25px] bg-gray-300"> 
+                <img class="p-10" src="images/dmr/qbu.png" alt="akm-image">
+                <h1 class="text-4xl bg-yellow-600 font-bold text-white w-full text-center">QBU</h1>
+                <div class="bg-gray-400 w-full flex items-center">
+                    <div class="w-1/2 text-right pr-2">
+                        <ul class="font-bold">
+                            <li class="my-1">Type:</li>
+                            <li class="my-1">Ammo Type:</li>
+                            <li class="my-1">Base Damage:</li>
+                            <li class="my-1">Magazine Size:</li>
+                            <li class="my-1">Reload Time:</li>
+                            <li class="my-1">Fire Rate:</li>
+                        </ul>
+                    </div>
+                    <div class="w-1/2 text-left pl-2">
+                        <ul>
+                            <li class="my-1">Designated Marksman Riffle</li>
+                            <li class="my-1">5.56mm</li>
+                            <li class="my-1">55</li>
+                            <li class="my-1">10 (Extended: 20) </li>
+                            <li class="my-1">3.0s</li>
                             <li class="my-1">0.1/s</li>
                         </ul>
                     </div>
                 </div>
                 <div class="w-full rounded-b-[25px] flex justify-center">
                     <a class="my-1 text-lg font-semibold text-green-800 hover:text-yellow-600" 
-                     href="https://en.wikipedia.org/wiki/AKM">Know More</a>
+                     href="https://en.wikipedia.org/wiki/QBU-88">Know More</a>
                 </div>
-
             </div>
-            
+
             <div class="flex flex-col items-center m-10 border-2 border-black w-cardW rounded-[25px] bg-gray-300"> 
-                <img class="p-10" src="images/ar/m416.png" alt="akm-image">
-                <h1 class="text-4xl bg-yellow-600 font-bold text-white w-full text-center">M416</h1>
+                <img class="p-10" src="images/dmr/slr.png" alt="akm-image">
+                <h1 class="text-4xl bg-yellow-600 font-bold text-white w-full text-center">SLR</h1>
                 <div class="bg-gray-400 w-full flex items-center">
                     <div class="w-1/2 text-right pr-2">
                         <ul class="font-bold">
@@ -639,148 +764,24 @@
                     </div>
                     <div class="w-1/2 text-left pl-2">
                         <ul>
-                            <li class="my-1">Assault Rifles</li>
-                            <li class="my-1">5.56mm</li>
-                            <li class="my-1">41</li>
-                            <li class="my-1">30 (Extended: 40) </li>
-                            <li class="my-1">2.1s</li>
-                            <li class="my-1">0.085/s</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="w-full rounded-b-[25px] flex justify-center">
-                    <a class="my-1 text-lg font-semibold text-green-800 hover:text-yellow-600" 
-                     href="https://en.wikipedia.org/wiki/Heckler_%26_Koch_HK416">Know More</a>
-                </div>
-            </div>
-
-            <div class="flex flex-col items-center m-10 border-2 border-black w-cardW rounded-[25px] bg-gray-300"> 
-                <img class="p-10" src="images/ar/g36c.png" alt="akm-image">
-                <h1 class="text-4xl bg-yellow-600 font-bold text-white w-full text-center">G36C</h1>
-                <div class="bg-gray-400 w-full flex items-center">
-                    <div class="w-1/2 text-right pr-2">
-                        <ul class="font-bold">
-                            <li class="my-1">Type:</li>
-                            <li class="my-1">Ammo Type:</li>
-                            <li class="my-1">Base Damage:</li>
-                            <li class="my-1">Magazine Size:</li>
-                            <li class="my-1">Reload Time:</li>
-                            <li class="my-1">Fire Rate:</li>
-                        </ul>
-                    </div>
-                    <div class="w-1/2 text-left pl-2">
-                        <ul>
-                            <li class="my-1">Assault Rifles</li>
-                            <li class="my-1">5.56mm</li>
-                            <li class="my-1">41</li>
-                            <li class="my-1">30 (Extended: 40) </li>
-                            <li class="my-1">3.8s</li>
-                            <li class="my-1">0.086/s</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="w-full rounded-b-[25px] flex justify-center">
-                    <a class="my-1 text-lg font-semibold text-green-800 hover:text-yellow-600" 
-                     href="https://en.wikipedia.org/wiki/Heckler_%26_Koch_G36">Know More</a>
-                </div>
-            </div>
-
-            <div class="flex flex-col items-center m-10 border-2 border-black w-cardW rounded-[25px] bg-gray-300"> 
-                <img class="p-10" src="images/ar/scar-l.png" alt="akm-image">
-                <h1 class="text-4xl bg-yellow-600 font-bold text-white w-full text-center">SCAR-L</h1>
-                <div class="bg-gray-400 w-full flex items-center">
-                    <div class="w-1/2 text-right pr-2">
-                        <ul class="font-bold">
-                            <li class="my-1">Type:</li>
-                            <li class="my-1">Ammo Type:</li>
-                            <li class="my-1">Base Damage:</li>
-                            <li class="my-1">Magazine Size:</li>
-                            <li class="my-1">Reload Time:</li>
-                            <li class="my-1">Fire Rate:</li>
-                        </ul>
-                    </div>
-                    <div class="w-1/2 text-left pl-2">
-                        <ul>
-                            <li class="my-1">Assault Rifles</li>
-                            <li class="my-1">5.56mm</li>
-                            <li class="my-1">41</li>
-                            <li class="my-1">30 (Extended: 40) </li>
-                            <li class="my-1">2.2s</li>
-                            <li class="my-1">0.096/s</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="w-full rounded-b-[25px] flex justify-center">
-                    <a class="my-1 text-lg font-semibold text-green-800 hover:text-yellow-600" 
-                     href="https://en.wikipedia.org/wiki/FN_SCAR">Know More</a>
-                </div>
-            </div>
-
-            <div class="flex flex-col items-center m-10 border-2 border-black w-cardW rounded-[25px] bg-gray-300"> 
-                <img class="p-10" src="images/ar/qbz.png" alt="akm-image">
-                <h1 class="text-4xl bg-yellow-600 font-bold text-white w-full text-center">QBZ</h1>
-                <div class="bg-gray-400 w-full flex items-center">
-                    <div class="w-1/2 text-right pr-2">
-                        <ul class="font-bold">
-                            <li class="my-1">Type:</li>
-                            <li class="my-1">Ammo Type:</li>
-                            <li class="my-1">Base Damage:</li>
-                            <li class="my-1">Magazine Size:</li>
-                            <li class="my-1">Reload Time:</li>
-                            <li class="my-1">Fire Rate:</li>
-                        </ul>
-                    </div>
-                    <div class="w-1/2 text-left pl-2">
-                        <ul>
-                            <li class="my-1">Assault Rifles</li>
-                            <li class="my-1">5.56mm</li>
-                            <li class="my-1">41</li>
-                            <li class="my-1">30 (Extended: 40) </li>
-                            <li class="my-1">3.66s</li>
-                            <li class="my-1">0.092/s</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="w-full rounded-b-[25px] flex justify-center">
-                    <a class="my-1 text-lg font-semibold text-green-800 hover:text-yellow-600" 
-                     href="https://en.wikipedia.org/wiki/QBZ-95">Know More</a>
-                </div>
-            </div>
-
-            <div class="flex flex-col items-center m-10 border-2 border-black w-cardW rounded-[25px] bg-gray-300"> 
-                <img class="p-10" src="images/ar/m762.png" alt="akm-image">
-                <h1 class="text-4xl bg-yellow-600 font-bold text-white w-full text-center">M762</h1>
-                <div class="bg-gray-400 w-full flex items-center">
-                    <div class="w-1/2 text-right pr-2">
-                        <ul class="font-bold">
-                            <li class="my-1">Type:</li>
-                            <li class="my-1">Ammo Type:</li>
-                            <li class="my-1">Base Damage:</li>
-                            <li class="my-1">Magazine Size:</li>
-                            <li class="my-1">Reload Time:</li>
-                            <li class="my-1">Fire Rate:</li>
-                        </ul>
-                    </div>
-                    <div class="w-1/2 text-left pl-2">
-                        <ul>
-                            <li class="my-1">Assault Rifles</li>
+                            <li class="my-1">Designated Marksman Riffle</li>
                             <li class="my-1">7.62mm</li>
-                            <li class="my-1">46</li>
-                            <li class="my-1">30 (Extended: 40) </li>
-                            <li class="my-1">2.9s</li>
-                            <li class="my-1">0.086/s</li>
+                            <li class="my-1">58</li>
+                            <li class="my-1">10 (Extended: 20) </li>
+                            <li class="my-1">3.683s</li>
+                            <li class="my-1">0.1/s</li>
                         </ul>
                     </div>
                 </div>
                 <div class="w-full rounded-b-[25px] flex justify-center">
                     <a class="my-1 text-lg font-semibold text-green-800 hover:text-yellow-600" 
-                     href="https://en.wikipedia.org/wiki/FB_Beryl">Know More</a>
+                     href="https://en.wikipedia.org/wiki/L1A1_Self-Loading_Rifle">Know More</a>
                 </div>
             </div>
 
             <div class="flex flex-col items-center m-10 border-2 border-black w-cardW rounded-[25px] bg-gray-300"> 
-                <img class="p-10" src="images/ar/honey-badger.png" alt="akm-image">
-                <h1 class="text-4xl bg-yellow-600 font-bold text-white w-full text-center">Honey Badger</h1>
+                <img class="p-10" src="images/dmr/mk14.png" alt="akm-image">
+                <h1 class="text-4xl bg-yellow-600 font-bold text-white w-full text-center">Mk14</h1>
                 <div class="bg-gray-400 w-full flex items-center">
                     <div class="w-1/2 text-right pr-2">
                         <ul class="font-bold">
@@ -794,24 +795,24 @@
                     </div>
                     <div class="w-1/2 text-left pl-2">
                         <ul>
-                            <li class="my-1">Assault Rifles</li>
+                            <li class="my-1">Designated Marksman Riffle</li>
                             <li class="my-1">7.62mm</li>
-                            <li class="my-1">43</li>
-                            <li class="my-1">30 (Extended: 40) </li>
-                            <li class="my-1">3.8s</li>
+                            <li class="my-1">61</li>
+                            <li class="my-1">10 (Extended: 20) </li>
+                            <li class="my-1">3.683s</li>
                             <li class="my-1">0.09/s</li>
                         </ul>
                     </div>
                 </div>
                 <div class="w-full rounded-b-[25px] flex justify-center">
                     <a class="my-1 text-lg font-semibold text-green-800 hover:text-yellow-600" 
-                     href="https://en.wikipedia.org/wiki/AAC_Honey_Badger">Know More</a>
+                     href="https://en.wikipedia.org/wiki/Mk_14_Enhanced_Battle_Rifle">Know More</a>
                 </div>
             </div>
 
             <div class="flex flex-col items-center m-10 border-2 border-black w-cardW rounded-[25px] bg-gray-300"> 
-                <img class="p-10" src="images/ar/aug.png" alt="akm-image">
-                <h1 class="text-4xl bg-yellow-600 font-bold text-white w-full text-center">AUG</h1>
+                <img class="p-10" src="images/dmr/sks.png" alt="akm-image">
+                <h1 class="text-4xl bg-yellow-600 font-bold text-white w-full text-center">SKS</h1>
                 <div class="bg-gray-400 w-full flex items-center">
                     <div class="w-1/2 text-right pr-2">
                         <ul class="font-bold">
@@ -825,142 +826,18 @@
                     </div>
                     <div class="w-1/2 text-left pl-2">
                         <ul>
-                            <li class="my-1">Assault Rifles</li>
-                            <li class="my-1">5.56mm</li>
-                            <li class="my-1">41</li>
-                            <li class="my-1">30 (Extended: 40) </li>
-                            <li class="my-1">3.66s</li>
-                            <li class="my-1">0.085/s</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="w-full rounded-b-[25px] flex justify-center">
-                    <a class="my-1 text-lg font-semibold text-green-800 hover:text-yellow-600" 
-                     href="https://en.wikipedia.org/wiki/Steyr_AUG">Know More</a>
-                </div>
-            </div>
-
-            <div class="flex flex-col items-center m-10 border-2 border-black w-cardW rounded-[25px] bg-gray-300"> 
-                <img class="p-10" src="images/ar/m16a4.png" alt="akm-image">
-                <h1 class="text-4xl bg-yellow-600 font-bold text-white w-full text-center">M16A4</h1>
-                <div class="bg-gray-400 w-full flex items-center">
-                    <div class="w-1/2 text-right pr-2">
-                        <ul class="font-bold">
-                            <li class="my-1">Type:</li>
-                            <li class="my-1">Ammo Type:</li>
-                            <li class="my-1">Base Damage:</li>
-                            <li class="my-1">Magazine Size:</li>
-                            <li class="my-1">Reload Time:</li>
-                            <li class="my-1">Fire Rate:</li>
-                        </ul>
-                    </div>
-                    <div class="w-1/2 text-left pl-2">
-                        <ul>
-                            <li class="my-1">Assault Rifles</li>
-                            <li class="my-1">5.56mm</li>
-                            <li class="my-1">41</li>
-                            <li class="my-1">30 (Extended: 40) </li>
-                            <li class="my-1">2.2s</li>
-                            <li class="my-1">0.075/s</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="w-full rounded-b-[25px] flex justify-center">
-                    <a class="my-1 text-lg font-semibold text-green-800 hover:text-yellow-600" 
-                     href="https://en.wikipedia.org/wiki/M16_rifle">Know More</a>
-                </div>
-            </div>
-
-            <div class="flex flex-col items-center m-10 border-2 border-black w-cardW rounded-[25px] bg-gray-300"> 
-                <img class="p-10" src="images/ar/groza.png" alt="akm-image">
-                <h1 class="text-4xl bg-yellow-600 font-bold text-white w-full text-center">Groza</h1>
-                <div class="bg-gray-400 w-full flex items-center">
-                    <div class="w-1/2 text-right pr-2">
-                        <ul class="font-bold">
-                            <li class="my-1">Type:</li>
-                            <li class="my-1">Ammo Type:</li>
-                            <li class="my-1">Base Damage:</li>
-                            <li class="my-1">Magazine Size:</li>
-                            <li class="my-1">Reload Time:</li>
-                            <li class="my-1">Fire Rate:</li>
-                        </ul>
-                    </div>
-                    <div class="w-1/2 text-left pl-2">
-                        <ul>
-                            <li class="my-1">Assault Rifles</li>
+                            <li class="my-1">Designated Marksman Riffle</li>
                             <li class="my-1">7.62mm</li>
-                            <li class="my-1">45</li>
-                            <li class="my-1">30 (Extended: 40) </li>
-                            <li class="my-1">3.0s</li>
-                            <li class="my-1">0.08/s</li>
+                            <li class="my-1">53</li>
+                            <li class="my-1">10 (Extended: 20) </li>
+                            <li class="my-1">4.55s</li>
+                            <li class="my-1">0.09/s</li>
                         </ul>
                     </div>
                 </div>
                 <div class="w-full rounded-b-[25px] flex justify-center">
                     <a class="my-1 text-lg font-semibold text-green-800 hover:text-yellow-600" 
-                     href="https://en.wikipedia.org/wiki/OTs-14_Groza">Know More</a>
-                </div>
-            </div>
-
-            <div class="flex flex-col items-center m-10 border-2 border-black w-cardW rounded-[25px] bg-gray-300"> 
-                <img class="p-10" src="images/ar/mk47-mutant.png" alt="akm-image">
-                <h1 class="text-4xl bg-yellow-600 font-bold text-white w-full text-center">Mk47</h1>
-                <div class="bg-gray-400 w-full flex items-center">
-                    <div class="w-1/2 text-right pr-2">
-                        <ul class="font-bold">
-                            <li class="my-1">Type:</li>
-                            <li class="my-1">Ammo Type:</li>
-                            <li class="my-1">Base Damage:</li>
-                            <li class="my-1">Magazine Size:</li>
-                            <li class="my-1">Reload Time:</li>
-                            <li class="my-1">Fire Rate:</li>
-                        </ul>
-                    </div>
-                    <div class="w-1/2 text-left pl-2">
-                        <ul>
-                            <li class="my-1">Assault Rifles</li>
-                            <li class="my-1">7.62mm</li>
-                            <li class="my-1">48</li>
-                            <li class="my-1">20 (Extended: 30) </li>
-                            <li class="my-1">3.36s</li>
-                            <li class="my-1">0.1/s</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="w-full rounded-b-[25px] flex justify-center">
-                    <a class="my-1 text-lg font-semibold text-green-800 hover:text-yellow-600" 
-                     href="https://en.wikipedia.org/wiki/CMMG_Mk47_Mutant">Know More</a>
-                </div>
-            </div>
-
-            <div class="flex flex-col items-center m-10 border-2 border-black w-cardW rounded-[25px] bg-gray-300"> 
-                <img class="p-10" src="images/ar/famas.png" alt="akm-image">
-                <h1 class="text-4xl bg-yellow-600 font-bold text-white w-full text-center">FAMAS</h1>
-                <div class="bg-gray-400 w-full flex items-center">
-                    <div class="w-1/2 text-right pr-2">
-                        <ul class="font-bold">
-                            <li class="my-1">Type:</li>
-                            <li class="my-1">Ammo Type:</li>
-                            <li class="my-1">Base Damage:</li>
-                            <li class="my-1">Magazine Size:</li>
-                            <li class="my-1">Reload Time:</li>
-                            <li class="my-1">Fire Rate:</li>
-                        </ul>
-                    </div>
-                    <div class="w-1/2 text-left pl-2">
-                        <ul>
-                            <li class="my-1">Assault Rifles</li>
-                            <li class="my-1">5.56mm</li>
-                            <li class="my-1">38</li>
-                            <li class="my-1">25 (Extended: 35) </li>
-                            <li class="my-1">3.6s</li>
-                            <li class="my-1">0.15/s</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="w-full rounded-b-[25px] flex justify-center">
-                    <a class="my-1 text-lg font-semibold text-green-800 hover:text-yellow-600" 
-                     href="https://en.wikipedia.org/wiki/FAMAS">Know More</a>
+                     href="https://en.wikipedia.org/wiki/SKS">Know More</a>
                 </div>
             </div>
             
